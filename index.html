@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Hello Dice!</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="gameboard">
+		
+			<div class="die-box die-box-template" data-die-id="0">
+                <div class="die-id">Die: <span class="die-id-text">0</span></div>
+                <div class="die-sides-input-container">Sides: <input type="text" class="sides-input" value="1" /></div>
+                <div class="die-sides-container">
+				</div>
+            </div>
+		
+			<div class="die-side-row die-side-row-template" data-side-id="0">
+				<span class="die-side-text">0</span>
+				<input type="text" class="die-side-input"/>
+			</div>
+		
+            <div class="dice">
+                <div class="dice-container"></div>
+                <div class="add-die-button hellodice-button">Add Die</div>
+            </div>
+            
+            <div class="roll">
+                <div class="roll-dice-button hellodice-button">Roll Dice</div>
+            </div>
+            
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/dice.js"></script>
+    </body>
+</html>
